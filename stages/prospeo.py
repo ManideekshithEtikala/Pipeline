@@ -77,7 +77,7 @@ def find_decision_makers(domains):
 
             results = data.get("results", [])
 
-            # limit to top 5 per company
+            # limit to top 5 per company not more thatn that
             for res in results[:5]:
                 person = res.get("person", {})
                 name = person.get("full_name", "").strip()
